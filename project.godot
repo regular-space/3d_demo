@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameInit="*res://source/autoloads/game_init.tscn"
+Overlay="*res://source/vfx/overlay.tscn"
 
 [display]
 

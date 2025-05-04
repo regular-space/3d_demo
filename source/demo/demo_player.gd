@@ -27,6 +27,9 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 		if coyote_frames < COYOTE_FRAMES_MAX:
 			coyote_frames += 1
+		else:
+			coyote_frames = COYOTE_FRAMES_MAX
+		print(coyote_frames)
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and can_jump:

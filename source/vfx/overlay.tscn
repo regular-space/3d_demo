@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7cjy15o0t322"]
+
+[ext_resource type="Shader" uid="uid://duxvsf7l8f585" path="res://source/vfx/shaders/bayer_dithering.gdshader" id="1_02sh4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tr1w1"]
+shader = ExtResource("1_02sh4")
+
+[node name="Overlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BayerDither" type="ColorRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_tr1w1")
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 180.0
