@@ -15,6 +15,10 @@ run/main_scene="uid://cf5cbuir787vh"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameInit="*res://source/autoloads/game_init.tscn"
+
 [display]
 
 window/size/viewport_width=320
