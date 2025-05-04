@@ -13,8 +13,6 @@ const COYOTE_FRAMES_MAX = 20
 @export var air_acceleration := 0.3
 @export var ground_friction := 0.3
 
-var look_direction: Vector2
-
 
 func _physics_process(delta: float) -> void:
 	
